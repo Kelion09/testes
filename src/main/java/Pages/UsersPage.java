@@ -22,6 +22,7 @@ public class UsersPage {
 
     public AuctionPage auctionPage(){
         driver.findElement(By.xpath("//a[contains(@href, '/leiloes')]")).click();
+//        driver.findElement(By.xpath("//*[text()='Leilões']")).click();
         return new AuctionPage(driver);
     }
 }

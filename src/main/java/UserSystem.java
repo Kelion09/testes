@@ -20,6 +20,8 @@ public class UserSystem {
         this.user = new HomePage(driver);
 
         user.startInHomePage();
+
+        user.userPage().newUserPage().addUser("Larissa","larissa@email.com");
     }
 
     @Test
